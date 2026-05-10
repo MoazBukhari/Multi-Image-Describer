@@ -1,0 +1,207 @@
+<!-- myapp/templates/index.html -->
+{% extends "base.html" %}
+{% load static %}
+{% comment %} <script src="{% static 'js/main.js' %}"></script> {% endcomment %}
+{% comment %} {% block title %}Multi Image Describer{% endblock %} {% endcomment %}
+
+{% comment %} {% block nav_active_home %}active" aria-current="page{% endblock %} {% endcomment %}
+
+{% block content %}
+
+<div class="ratio ratio-16x9">
+<video loop autoplay muted oncontextmenu="return false;">
+        <source src="{% static 'videos/main.data' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<section id="features" class="container my-5">
+  <h1 class="text-center p-3 text-info">Multi Image Describer</h1>
+  
+  <div class="container py-2">
+  <h2 class="text-center p-4">Features</h2>
+  <div class="row g-4">
+    <!-- Single Feature Box -->
+    <div class="col-md-4">
+      <div class="card h-100 border-1 shadow-sm p-4 text-center">
+        <div class="mb-3">
+          <!-- Bootstrap Icon or SVG -->
+          <i class="bi bi-star-fill fs-1 text-primary"></i>
+        </div>
+        <h3 class="h5">Feature Title</h3>
+        <p class="text-muted">A short description of why this feature is great for your users.</p>
+      </div>
+    </div>
+    <!-- Add more columns as needed -->
+    <div class="col-md-4">
+      <div class="card h-100 border-1 shadow-sm p-4 text-center">
+        <div class="mb-3">
+          <!-- Bootstrap Icon or SVG -->
+          <i class="bi bi-star-fill fs-1 text-primary"></i>
+        </div>
+        <h3 class="h5">Feature Title</h3>
+        <p class="text-muted">A short description of this feature.</p>
+        <p class="text-muted">A short description of this feature.</p>
+        <p class="text-muted">A short description of this feature.</p>
+        <p class="text-muted">A short description of this feature.</p>
+        <p class="text-muted">A short description of this feature.</p>
+      </div>
+    </div>
+    <!-- Add more columns as needed -->
+    <div class="col-md-4">
+      <div class="card h-100 border-1 shadow-sm p-4 text-center">
+        <div class="mb-3">
+          <!-- Bootstrap Icon or SVG -->
+          <i class="bi bi-star-fill fs-1 text-primary"></i>
+        </div>
+        <h3 class="h5">Feature Title</h3>
+        <p class="text-muted">A short description of why this feature is great for your users.</p>
+      </div>
+    </div>
+    <!-- Add more columns as needed -->
+  </div>
+</div>
+</section>
+
+
+<section class="py-5 border-top border-bottom border-5" >
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" id="pricing">Buy Credits</h2>
+      <p class="text-secondary">Choose a credit pack to top up your account instantly.</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Small Pack -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm text-center">
+          <div class="card-body p-5">
+            <div class="mb-3 text-primary">
+              <i class="bi bi-coin fs-1"></i>
+            </div>
+            <h5 class="fw-bold">Starter Pack</h5>
+            <h2 class="display-5 fw-bold my-3">100</h2>
+            <p class="text-muted text-uppercase fw-semibold small mb-4">Credits / Month</p>
+            <div class="badge bg-light text-dark border mb-4 p-2">$0.025 per credit</div>
+            <h4 class="fw-bold mb-4">$2.50</h4>
+            <button class="btn btn-outline-primary w-100 py-2 fw-bold">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medium Pack (Popular) -->
+      <div class="col">
+        <div class="card h-100 border-primary shadow text-center position-relative">
+          <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2">MOST POPULAR</span>
+          <div class="card-body p-5">
+            <div class="mb-3 text-primary">
+              <i class="bi bi-stack fs-1"></i>
+            </div>
+            <h5 class="fw-bold">Pro Pack</h5>
+            <h2 class="display-5 fw-bold my-3">500</h2>
+            <p class="text-muted text-uppercase fw-semibold small mb-4">Credits/ Month</p>
+            <div class="badge bg-primary-subtle text-primary border border-primary mb-4 p-2">$0.020 per credit</div>
+            <h4 class="fw-bold mb-4">$12.00</h4>
+            <button class="btn btn-primary w-100 py-2 fw-bold shadow-sm">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Pack -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm text-center">
+          <div class="card-body p-5">
+            <div class="mb-3 text-primary">
+              <i class="bi bi-gem fs-1"></i>
+            </div>
+            <h5 class="fw-bold">Whale Pack</h5>
+            <h2 class="display-5 fw-bold my-3">2,000</h2>
+            <p class="text-muted text-uppercase fw-semibold small mb-4">Credits / Month</p>
+            <div class="badge bg-success-subtle text-success border border-success mb-4 p-2">$0.020 per credit</div>
+            <h4 class="fw-bold mb-4">$40.00</h4>
+            <button class="btn btn-dark border w-100 py-2 fw-bold">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Footer -->
+    <div class="text-center mt-4">
+      <p class="small text-secondary"><i class="bi bi-info-circle me-1"></i>Credits will expire and can't be used after a month.<a href="#custom-plan" class="text-decoration-underline px-3 ">Need a custom plan?</a></p>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-5" >
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8" id="custom-plan">
+        <div class="card shadow border-1 p-4 p-md-5">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Custom Credit Pack</h2>
+            <p class="text-muted">Slide to choose exactly how many credits you need.</p>
+          </div>
+
+          <!-- Visual Display -->
+          <div class="bg-light rounded-3 p-4 text-center mb-4">
+            <div class="row align-items-center">
+              <div class="col-6 border-end text-secondary">
+                <span class="d-block small text-uppercase fw-bold">You Get</span>
+                <h2 class="fw-bold mb-0 text-primary"><span id="s_creditCount">0</span></h2>
+                <span class=" small">Credits</span>
+              </div>
+              <div class="col-6">
+                <span class="d-block small text-uppercase fw-bold text-secondary">Total Cost</span>
+                <h2 class="fw-bold mb-0 text-dark">$<span id="totalPrice">0</span></h2>
+                <span class="text-muted small text-decoration-line-through" id="discountInfo">$0.10/ea</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Slider -->
+          <div class="mb-4">
+            <label for="creditSlider" class="form-label d-flex justify-content-between">
+              <span>Quantity</span>
+              <span class="badge bg-primary" id="badgeDiscount"></span>
+            </label>
+            <input type="range" class="form-range" min="100" max="5000" step="100" value="500" id="creditSlider">
+            <div class="d-flex justify-content-between text-muted small mt-2">
+              <span>100</span>
+              <span>2,500</span>
+              <span>5,000</span>
+            </div>
+          </div>
+
+          <!-- Features & CTA -->
+          <ul class="list-unstyled mb-4">
+            <div class="form-check form-switch mb-2">
+              <label class="form-check-label" for="flexSwitchCheckDefault">BYOK</label>
+              <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Bring Your Own Key"></i>
+              <!-- Requires Bootstrap Icons CSS -->
+
+              <input class="form-check-input" type="checkbox" id="byokToggle">
+              <span class="badge bg-primary" id="byokBadgeDiscount"></span>
+            </div>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Credits never expire</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Instant account top-up</li>
+          </ul>
+
+          <button class="btn btn-primary btn-lg w-100 fw-bold">Purchase Credits</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  [data-bs-theme="dark"] video {
+    filter: brightness(0.7) contrast(1.2); /* Reduces brightness to 60% and bumps contrast */
+    transition: filter 0.5s ease; /* Smooth transition if you toggle themes */
+  }
+</style>
+
+{% endblock %}
